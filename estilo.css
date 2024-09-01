@@ -1,0 +1,76 @@
+/*adicionando novas fontes*/
+@font-face {
+    font-family: 'Carelia';
+    src: url(fontes/Carelia-Upright.ttf);
+}
+@font-face {
+    font-family: 'Nimbus';
+    src: url(fontes/TAN-NIMBUS.ttf);
+}
+
+body {
+    /*cor de fundo do site e padrão do texto*/
+    font-family: 'Carelia', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #fffff1;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+header {
+    margin-top: 20px;
+}
+img.title {
+    /*ajustes da imagem título*/
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+h1 {
+    margin: 0;
+}
+h2 {
+    font-family: 'Nimbus';
+    color: #8f5bbd;
+}
+nav {
+    margin: 20px 0;
+}
+nav a {
+    /*configurações do botão*/
+    font-family: 'Carelia';
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fffff1;
+    background-color: #8f5bbd;
+    border-radius: 5px;
+}
+nav a:hover {
+    background-color: #d8bcf4;
+    /* muda a cor do botão quando o mouse passa por cima*/
+}
+section {
+    padding: 20px;
+    border-bottom: 1px solid #8f5bbd;
+}
+.content {
+    margin: 20px 0;
+}
+
+/*exibição de imagens*/
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gallery img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    position: relative;
+}
