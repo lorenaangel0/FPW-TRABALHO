@@ -11,6 +11,7 @@
 body {
     /*cor de fundo do site e padrão do texto*/
     font-family: 'Carelia', sans-serif;
+    font-size: 20px;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -21,7 +22,7 @@ body {
     margin: 0 auto;
 }
 header {
-    margin-top: 20px;
+    margin-top: 90px;
 }
 img.title {
     /*ajustes da imagem título*/
@@ -36,11 +37,17 @@ h2 {
     font-family: 'Nimbus';
     color: #8f5bbd;
 }
+/*configurações dos botões fixos no topo*/
 nav {
-    margin: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+    background-color: #fffff1;
 }
 nav a {
-    /*configurações do botão*/
     font-family: 'Carelia';
     display: inline-block;
     margin: 0 10px;
@@ -73,4 +80,62 @@ section {
     height: 160px;
     object-fit: cover;
     position: relative;
+}
+/*lista com imagens como pontos*/
+.list-with-images {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.lista li {
+    background: url('imagens/star.png') no-repeat;
+    background-size: 20px 20px;
+    padding-left: 30px; 
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+  /* Estilo para o vídeo */
+  .video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+.video-container video {
+    width: 60%;
+    max-width: 800px;
+    height: auto;
+}
+
+/*ajustes do formulário*/
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+.contact-form button {
+    font-family: 'Carelia';
+    background-color: #8f5bbd;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background-color: #d8bcf4;;
 }
